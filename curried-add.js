@@ -26,7 +26,7 @@ function curriedAdd(total) {
 
 
     const addOrReturn = function (num) {
-        if (!num) {
+        if (!num || typeof num !== 'number') {
             return total;
         } else {
             total += num;
